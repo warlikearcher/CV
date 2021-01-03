@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Hòa CV</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel='stylesheet' type='text/css' href='css/index.css'>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <a href="#eng" data-reload>Eng</a>
+    <a href="#vn" data-reload>VN</a>
+    <p id="LanguageTest">AAAAA</p>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script>
+        var dataReload = document.querySelectorAll("[data-reload]");
+        var language = {
+            eng = {
+                a: "Eng"
+            },
+            vn = {
+                a: "VN"
+            }
+        };
+
+        if (window.location.hash) {
+            if (window.location.hash === "#vn") {
+                LanguageTest.textContent = language.vn.a;
+            }
+        }
+
+        for (i = 0; i < dataReload.length; i++) {
+            dataReload[i].onclick = function () {
+                loacation.reload(true);
+            };
+        }
+    </script>
+
+</body>
+
+</html>
