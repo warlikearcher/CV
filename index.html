@@ -7,223 +7,267 @@
     <title>Hòa CV</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
-    <link rel='stylesheet' type='text/css' href='css/index.css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
-    <div class="container bod">
-        <header class="header">
-            <div class="row r-header">
-                <div class="img-cv col-md-4">
-                    <img src="image/IMG20210314220653-min.jpg" alt="">
-                </div>
-                <div class="name-cv  col-md-8" style="text-align: center;">
-                    <div>
-                        <h1>Nguyễn Văn Trần Hòa</h1>
-                    </div>
-                    <div class="social-icon">
-                        <a href="https://www.fb.com/HoaTranEric1/" class="fa fa-facebook"></a>
-                        <a href="https://twitter.com/MinelrealEric" class="fa fa-twitter"></a>
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to={{nguyenvantranhoa@gmail.com}}&su=Subject&body=Body%20Text" class="fa fa-google"></a>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <section class="bodysec">
-            <div class="row bodyrow">
-                <div class="col col-xs-4 col-sm-4 col-md-4 col-lg-4 left-column">
-                    
-                    <div class="skills">
-                        <h3>Thông tin cá nhân</h3>
-                        <div class="list">
-                            <ul>
-                                <li><i class="glyphicon glyphicon-user"></i> Họ và tên: Nguyễn Văn Trần Hòa</li>
-                                <li><i class="glyphicon glyphicon-gift"></i> Ngày sinh: 19-05-2000</li>
-                                <li><i class="glyphicon glyphicon-envelope"></i> nguyenvantranhoa@gmail.com</li>
-                                <li><i class="glyphicon glyphicon-earphone"></i> (+84) 0867463878 / 0358818164</li>
-                                <li><i class="glyphicon glyphicon-home"></i> 451/29/11 Tô Hiến Thành, phường 14, quận
-                                    10, thành phố Hồ Chí Minh</li>
+    <header>
 
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="skills">
-                        <h3>Kỹ năng</h3>
-                        <div class="list">
-                            <table>
-                                <tr>
-                                    <td>Java</td>
-                                    <td>
-                                        <div class="circle">
-                                            <span class="dot circle-1"></span>
-                                            <span class="dot circle-1"></span>
-                                            <span class="dot circle-1"></span>
-                                            <span class="dot"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>C#</td>
-                                    <td>
-                                        <div class="circle">
-                                            <span class="dot circle-1"></span>
-                                            <span class="dot circle-1"></span>
-                                            <span class="dot circle-1"></span>
-                                            <span class="dot"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Tiếng Anh</td>
-                                    <td>
-                                        <div class="circle">
-                                            <span class="dot circle-1"></span>
-                                            <span class="dot circle-1"></span>
-                                            <span class="dot"></span>
-                                            <span class="dot"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
+        <div class="header-background"></div>
+    </header>
+    <section id="About-me">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
 
-                        </div>
-                    </div>
+                    <div id="v-card" class="card">
 
-                    <div class="skills">
-                        <h3>Sở thích</h3>
-                        <div class="list">
-                            <p>- Đọc sách</p>
-                        </div>
-                    </div>
+                        <!-- PROFILE PICTURE -->
+                        <div id="profile" class="right">
+                            <img alt="profile-image" class="img-responsive" src="image/IMG20210314220653-min.jpg">
+                            <div class="slant"></div>
 
-                    <div class="skills">
-                        <h3>Tải xuống CV</h3>
-                        <div class="list">
-                            <form method="get" action="Nguyen-Van-Tran-Hoa-CV.pdf" target="_blank">
-                                <button type="submit" class="btn-dowload"><i class="fa fa-download"></i> <span>Download</span></button>
-                             </form>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-xs-8 col-sm-8 col-md-8 col-lg-8 right-column">
-
-                    <div class="box">
-                        <div class="title-r">
-                            <div>
-                                <span class="dot circle-2"></span>
-                            </div>
-                            <div>
-                                <h2>Trình độ học vấn</h2>
+                            <!--EMPTY PLUS BUTTON-->
+                            <div class="btn-floating btn-large add-btn">
+                                <a href="/file/Nguyen-Van-Tran-Hoa.pdf" class="add-btn-a" style="text-decoration: none;" download>
+                                    <i class="material-icons">download</i>
+                                </a>
                             </div>
 
-
                         </div>
-                        <div class="row" id="Edution-info">
-                            <div class="e-info">
-                                <h4 class="school">Cao đẳng FPT - FPT Aptech</h4>
-                                <ul>
-                                    <li>Chứng chỉ HDSE</li>
+
+
+                        <div class="card-content">
+
+                            <!-- NAME & STATUS -->
+                            <div class="info-headings">
+                                <h4 class="text-uppercase left">Nguyen Van Tran Hoa</h4>
+                                <h6 class="text-capitalize left">A Full Stack Developer</h6>
+                            </div>
+
+                            <!-- CONTACT INFO -->
+                            <div class="infos">
+                                <ul class="profile-list">
+                                    <li class="clearfix">
+                                        <span class="title"><i class="material-icons">cake</i></span>
+                                        <span class="content">19-05-2000</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="title"><i class="material-icons">email</i></span>
+                                        <span class="content">nguyenvantranhoa@gmail.com</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="title"><i class="material-icons">phone</i></span>
+                                        <span class="content">(+84) 0358818164 </span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="title"><i class="material-icons">place</i></span>
+                                        <span class="content">District 10 , Ho Chi Minh city</span>
+                                    </li>
 
                                 </ul>
                             </div>
 
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="title-r">
-                            <div>
-                                <span class="dot circle-2"></span>
+                            <!--LINKS-->
+                            <div class="links">
+                                <div class="social-icon">
+                                    <div class="social btn-floating-social indigo">
+                                        <a href="https://www.facebook.com/HoaTranEric1/" target="_blank" id="first_one"><i class="fa fa-facebook"></i></a>
+                                    </div>
+                                    <div class="social btn-floating-social blue">
+                                        <a href="https://twitter.com/MinelrealEric" target="_blank"><i class="fa fa-twitter"></i></a>
+
+                                    </div>
+                                    <div class="social btn-floating-social red">
+                                        <a href="mailto:nguyenvantranhoa@gmail.com"><i class="fa fa-google-plus"></i></a>
+
+                                    </div>
+
+                                </div>
                             </div>
-                            <div>
-                                <h2>Kinh nghiệm</h2>
-                            </div>
-
-
-                        </div>
-                        <div class="content-ex">
-                            <ul>
-                                <li>
-                                    <h3>Thực hiện đồ án học kỳ</h3>
-                                </li>
-                                <li>
-                                    <h4>- Đồ án học kỳ dùng C# / SQL :</h4>
-                                    <i>+ Mô tả: Trang cửa hàng bán sách và các đồ dùng học tập</i>
-                                    <br>
-                                    <i>+ Các chức năng: gồm các chức năng căn bản như tìm kiếm, tạo đơn hàng, đăng
-                                        ký/đăng nhập, gửi phản hồi, đánh giá sản phẩm, quản lý sản phẩm, quản lý đơn
-                                        hàng, quản lý phản hồi</i>
-                                    <br>
-                                    <i>+ Vị trí thực hiện: Full-stack</i>
-                                    <br>
-                                    <i>+ Các công nghệ sử dụng: Ajax,bootstrap,BingMap,ASP.NET MVC 5</i>
-                                    <br>
-                                    <i>+ Xem mã nguồn : <a
-                                            href="https://github.com/warlikearcher/T11907M0-ShradhaBookStore"
-                                            target="_blank">Ở đây</a></i>
-
-                                </li>
-                                <li>
-                                    <h4>- Các kiến thức căn bán: C#, JAVA, PHP, SQL/MySQL server, GitHub</h4>
-                                </li>
-                            </ul>
                         </div>
 
-                    </div>
-
-                    <div class="box">
-                        <div class="title-r">
-                            <div>
-                                <span class="dot circle-2"></span>
-                            </div>
-                            <div>
-                                <h2>Mục tiêu nghề nghiệp</h2>
-                            </div>
-
-
-                        </div>
-                        <div class="content-ex">
-                            <ul>
-                                <li>
-                                    <h4>- Mục tiêu ngắn hạn là trở thành một lập trình viên Full-stack</h4>
-                                </li>
-                                <li>
-                                    <h4>- Mục tiêu dài hạn là trở thành một software engineer</h4>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <div class="title-r">
-                            <div>
-                                <span class="dot circle-2"></span>
-                            </div>
-                            <div>
-                                <h2>TÓM TẮT</h2>
-                            </div>
-
-
-                        </div>
-                        <div class="content-ex">
-                            <ul>
-                                <li>
-                                    <h4>Tôi là Hòa. Mong muốn trở thành một Software engineer trong tương lai, ngoài ra tôi mong muốn được làm việc trong một môi trường chuyên nghiệp, đồng nghiệp hòa đồng và thân thiện.</h4>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
+    <section id="Summary">
+        <div class="section-heading">
+            <h2 class="section-title text-uppercase">Summary</h2>
+        </div>
+        <div class="container">
+            <div class="skills-container">
+                <div class="col-md-12">
+                    <div class="section-box">
+                        <p class="">I am Hoa, an intern programmer in the process of developing my own skills,
+                            with good knowledge of Database Design, Design Pattern, Object-Oriented Analysis and Design.
+                            I aim to become a Software engineer in the future, so I want to work in a professional
+                            environment, friendly and sociable colleagues.</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="Skills">
+        <div class="section-heading">
+            <h2 class="section-title text-uppercase">Skills</h2>
+        </div>
+        <div class="container">
+            <div class="skills-container row">
+                <div class="col-md-5">
+                    <div class="section-box">
+                        <h2 class="box-title">Programming languages</h2>
+                        <ul>
+                            <li>C#. NET</li>
+                            <li>PHP</li>
+                            <li>HTML, CSS</li>
+                            <li>Java</li>
+                        </ul>
+                        <h2 class="box-title">Frameworks &amp; platforms</h2>
+                        <ul>
+                            <li>ASP.NET MVC / Entity Framework / LINQ to SQL</li>
+                            <li>ASP WebAPI</li>
+                            <li>Software Development Kit: JDK</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="section-box">
+                        <h2 class="box-title">Database</h2>
+                        <ul>
+                            <li>Microsoft SQL</li>
+                            <li>MySQL</li>
+                            <li>SQLite</li>
+                        </ul>
+                        <h2 class="box-title">Version Control</h2>
+                        <ul>
+                            <li>Github</li>
+                        </ul>
+                        <h2 class="box-title">IDE</h2>
+                        <ul>
+                            <li>Visual Studio 2019</li>
+                            <li>Android Studio</li>
+                            <li>Eclipse &amp; Netbeans</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Experiences">
+        <div class="section-heading">
+            <h2 class="section-title text-uppercase">Experiences</h2>
+        </div>
+        <div class="container">
+            <div class="experience-items">
+                <div class="experience-item">
+                    <div class="stay-time">
+                        <p>
+                            05/2020
+                            <br> -<br>
+                            06/2020
+                        </p>
+                    </div>
+                    <div class="name-designation">
+                        <h3 class="designation">Full Stack Developer</h3>
+                        <p class="name-of-org">TechMedia</p>
+                    </div>
+
+                    <div class="comments">
+                        <ul>
+                            <li><span class="bold">Project name: </span> TechMedia</li>
+                            <li><span class="bold">Project Description</span>: This is an online store that sells all
+                                kinds of spare parts and electronic devices such as laptops, monitors, graphics cards,
+                                ram, pc case, ...!</li>
+                            <li><span class="bold">Team Size</span>: 4</li>
+                            <li><span class="bold">Position assumed: </span> Team Leader / Fullstack Developer</li>
+                            <li><span class="bold">Responsiblities</span>: Read / Analyze customer requirements.Develop
+                                the frameworks and modules of the system, and assign work.</li>
+                            <li><span class="bold">Accomplishments</span>: Improved teamwork and communication skills, experience working with php / MySQL.</li>
+                            <li><span class="bold">Technologies</span>: Front-end: Html/css, bootstrap.
+                                Back-end: PHP, ajax .</li>
+                            <li><span class="bold">View source Code: </span> <a
+                                    href="https://github.com/warlikearcher/TechMedia_T11907M0" target="_blank">Click
+                                    here</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.comments -->
+                </div>
+                <div class="experience-item">
+                    <div class="stay-time">
+                        <p>
+                            11/2020
+                            <br> -<br>
+                            12/2020
+                        </p>
+                    </div>
+                    <div class="name-designation">
+                        <h3 class="designation">Full Stack Developer</h3>
+                        <p class="name-of-org">Shradha Book Store</p>
+                    </div>
+
+                    <div class="comments">
+                        <ul>
+                            <li><span class="bold">Project name: </span> Shradha Book Store</li>
+                            <li><span class="bold">Project Description</span>: This is an online bookstore. Selling
+                                books and stationery items like pens, rulers and DVDs!</li>
+                            <li><span class="bold">Team Size</span>: 4</li>
+                            <li><span class="bold">Position assumed: </span> Team Leader / Fullstack Developer</li>
+                            <li><span class="bold">Responsiblities</span>: Read / Analyze customer requirements. Meet
+                                team members, develop the frameworks and modules of the system, and assign work.</li>
+                            <li><span class="bold">Accomplishments</span>: Learned new Microsoft
+                                technologies and frameworks. Improved teamwork and communication skills.</li>
+                            <li><span class="bold">Technologies</span>: Front-end: Html/css, bootstrap.
+                                Back-end: ASP.NET MVC5, Entity Framework.</li>
+                            <li><span class="bold">View source Code: </span> <a
+                                    href="https://github.com/warlikearcher/T11907M0-ShradhaBookStore"
+                                    target="_blank">Click
+                                    here</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.comments -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Education">
+        <div class="section-heading">
+            <h2 class="section-title text-uppercase">Education</h2>
+        </div>
+        <div class="container">
+            <div class="education-item">
+                <div class="edu-time light-blue">
+                    <p>2019
+                        <br> -
+                        <br> 2021
+                    </p>
+                </div>
+                <!-- /.edu-time -->
+                <div class="edu-title">
+                    <h5 class="edu-session">HDSE (HIGHER DIPLOMA IN SOFTWARE ENGINEERING)</h5>
+                    <p class="edu-inst">FPT Aptech, Vietnam</p>
+                </div>
+                <hr>
+                <!-- /.edu-title -->
+                <div class="edu-comments">
+                    <ul>
+                        <li>GPA: 7.0/10. Degree grade: Credit</li>
+                    </ul>
+                </div>
+                <!-- /.edu-comments -->
+            </div>
+        </div>
+    </section>
 
 
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
