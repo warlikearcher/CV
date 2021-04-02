@@ -41,17 +41,17 @@ body {
 }
 
 #profile {
-    width: 50%;
+    width: 40%;
     height: 100%;
     position: absolute;
     right: 0;
     z-index: 1;
 }
 
-#profile img{
+/* #profile img{
     height: 100%;
     width: 100%;
-}
+} */
 #profile .slant {
     top: 0;
     z-index: 1;
